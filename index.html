@@ -1,0 +1,603 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
+<style>
+body{
+background-image: url('') !important; 
+background-color:#FFFAFA;
+overflow:hidden;
+}
+
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #FFA1B7;}
+
+body:hover #textholder1 {
+left:3%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+body:hover #textholder2 {
+left:19%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+body:hover #textholder3 {
+left:65%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+body:hover #textholder4 {
+left:81%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pinkbox {
+position:absolute;
+background-color:#FFE6E6;
+width:96%;
+height:70%;
+top:15%;
+left:2%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#picbox1 {
+position:absolute;
+background-color:#FFFFFF;
+width:15%;
+height:66%;
+top:17%;
+left:3%;
+background-image: url('https://i.imgur.com/MN53sNs.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#picbox2 {
+position:absolute;
+background-color:#FFFFFF;
+width:16%;
+height:66%;
+top:17%;
+left:34%;
+background-image: url('https://i.imgur.com/GYeAvwa.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#picbox3 {
+position:absolute;
+background-color:#cccccc;
+width:16%;
+height:66%;
+top:17%;
+left:50%;
+background-image: url('https://i.imgur.com/uzRQs3M.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#picbox4 {
+position:absolute;
+background-color:#FFFFFF;
+width:15%;
+height:66%;
+top:17%;
+left:82%;
+background-image: url('https://i.imgur.com/IUNtpQq.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#tabbox1 {
+position:absolute;
+background-color:rgba(255, 230, 230, 0.9);
+width:10%;
+height:4%;
+top:70%;
+left:37.5%;
+color:#FFA1B7;
+font-size:3vh;
+font-family: 'Marcellus SC', serif;
+text-align:center;
+line-height:1.4;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2 {
+position:absolute;
+background-color:rgba(255, 230, 230, 0.9);
+width:10%;
+height:4%;
+top:76%;
+left:37.5%;
+color:#FFA1B7;
+font-size:3vh;
+font-family: 'Marcellus SC', serif;
+text-align:center;
+line-height:1.4;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3 {
+position:absolute;
+background-color:rgba(255, 230, 230, 0.9);
+width:10%;
+height:4%;
+top:70%;
+left:52.5%;
+color:#FFA1B7;
+font-size:3vh;
+font-family: 'Marcellus SC', serif;
+text-align:center;
+line-height:1.4;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:rgba(255, 230, 230, 0.9);
+width:10%;
+height:4%;
+top:76%;
+left:52.5%;
+color:#FFA1B7;
+font-size:3vh;
+font-family: 'Marcellus SC', serif;
+text-align:center;
+line-height:1.4;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover {
+background-color:#FFA1B7;
+color:#FFE6E6;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#textholder1 {
+position:absolute;
+background-color:#AEE9F5;
+width:16%;
+height:66%;
+top:17%;
+left:18%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#textholder2 {
+position:absolute;
+background-color:#C2FDFF;
+width:16%;
+height:66%;
+top:17%;
+left:34%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#textholder3 {
+position:absolute;
+background-color:#AEE9F5;
+width:16%;
+height:66%;
+top:17%;
+left:50%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#textholder4 {
+position:absolute;
+background-color:#C2FDFF;
+width:16%;
+height:66%;
+top:17%;
+left:66%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#title1 {
+position:absolute;
+padding:1%;
+background-color:#C2FDFF;
+border-bottom:4px solid #FFA1B7;
+border-top:4px solid #FFA1B7;
+width:84%;
+height:20%;
+top:4%;
+left:7%;
+}
+
+#content1 {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#C2FDFF;
+width:84%;
+height:67%;
+top:29%;
+left:7%;
+color:#666666;
+font-size:1.5vh;
+font-family: 'Coda', cursive;
+}
+
+#title2 {
+position:absolute;
+padding:1%;
+background-color:#AEE9F5;
+border-bottom:4px solid #FFA1B7;
+border-top:4px solid #FFA1B7;
+width:84%;
+height:20%;
+top:4%;
+left:7%;
+}
+
+#content2 {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#AEE9F5;
+width:84%;
+height:67%;
+top:29%;
+left:7%;
+color:#666666;
+font-size:1.5vh;
+font-family: 'Coda', cursive;
+}
+
+#content3 {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#C2FDFF;
+width:84%;
+height:67%;
+top:29%;
+left:7%;
+color:#666666;
+font-size:1.5vh;
+font-family: 'Coda', cursive;
+}
+
+#content4 {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#AEE9F5;
+width:84%;
+height:67%;
+top:29%;
+left:7%;
+color:#666666;
+font-size:1.5vh;
+font-family: 'Coda', cursive;
+}
+
+#squarepic1 {
+position:absolute;
+width:20%;
+height:40%;
+top:10%;
+left:40%;
+background-image: url('https://i.imgur.com/UJILI2T.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#squarepic2 {
+position:absolute;
+width:20%;
+height:40%;
+top:10%;
+left:40%;
+background-image: url('https://i.imgur.com/bJkMkZa.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#squarepic3 {
+position:absolute;
+width:20%;
+height:40%;
+top:10%;
+left:40%;
+background-image: url('https://i.imgur.com/EIDLPhg.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#squarepic4 {
+position:absolute;
+width:20%;
+height:40%;
+top:10%;
+left:40%;
+background-image: url('https://i.imgur.com/1vlQs9p.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#picline1 {
+position:absolute;
+border-bottom:4px solid #FFE6E6;
+width:35%;
+top:25%;
+left:0%;
+}
+
+#picline2 {
+position:absolute;
+border-bottom:4px solid #FFE6E6;
+width:35%;
+top:25%;
+left:65%;
+}
+
+#titletext1 {
+position:absolute;
+background-color:#FFE6E6;
+width:100%;
+height:42%;
+left:0%;
+top:58%;
+text-align:center;
+font-size:4vh;
+color:#0A405C;
+font-family: 'Srisakdi', cursive;
+line-height:1.4;
+}
+
+#titletext2 {
+position:absolute;
+background-color:#FFE6E6;
+width:100%;
+height:42%;
+left:0%;
+top:58%;
+text-align:center;
+font-size:4vh;
+color:#0A405C;
+font-family: 'Srisakdi', cursive;
+line-height:1.4;
+}
+
+#titletext3 {
+position:absolute;
+background-color:#FFE6E6;
+width:100%;
+height:42%;
+left:0%;
+top:58%;
+text-align:center;
+font-size:4vh;
+color:#0A405C;
+font-family: 'Srisakdi', cursive;
+line-height:1.4;
+}
+
+#titletext4 {
+position:absolute;
+background-color:#FFE6E6;
+width:100%;
+height:42%;
+left:0%;
+top:58%;
+text-align:center;
+font-size:4vh;
+color:#0A405C;
+font-family: 'Srisakdi', cursive;
+line-height:1.4;
+}
+
+.tabs{
+display:inline-block;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8 {
+display: none;
+}
+
+i {
+color:#0A405C;
+}
+
+a {
+color:#FFA1B7;
+text-decoration:none;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#0A405C;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+b {
+background-color:#FFA1B7;
+color:#FFE6E6;
+text-transform:uppercase;
+font-family: 'Marcellus SC', serif;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Coda|Marcellus+SC|Srisakdi" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('content3').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('titletext2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('titletext3').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="pinkbox"></div>
+<div id="picbox1"></div>
+<div id="picbox2"></div>
+<div id="picbox3"></div>
+<div id="picbox4"></div>
+
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation2 ('tab2')">Tab One</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation2 ('tab4')">Tab Two</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation1 ('tab5');changeNavigation3 ('tab6')">Tab Three</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation1 ('tab7');changeNavigation3 ('tab8')">Tab Four</span>
+</div>
+
+<div id="textholder1">
+<div id="title1">
+<div id="picline1"></div>
+<div id="squarepic1"></div>
+<div id="picline2"></div>
+<div id="titletext1">
+Title One
+</div>
+</div>
+<div id="content1">
+<b>Bold</b>
+<br>
+<i>Italic</i>
+<br>
+<a target="_blank" href="http://">Link</a>
+<br>
+Normal text
+</div>
+</div>
+<div id="textholder2">
+<div id="title2">
+<div id="picline1"></div>
+<div id="squarepic2"></div>
+<div id="picline2"></div>
+<div id="titletext2">
+Title Two
+</div>
+</div>
+<div id="content2">
+<b>Bold</b>
+<br>
+<i>Italic</i>
+<br>
+<a target="_blank" href="http://">Link</a>
+<br>
+Normal text
+<br><br>
+<b>Note:</b> Leftmost tab buttons only change this title and box.
+</div>
+</div>
+<div id="textholder3">
+<div id="title1">
+<div id="picline1"></div>
+<div id="squarepic3"></div>
+<div id="picline2"></div>
+<div id="titletext3">
+Title Three
+</div>
+</div>
+<div id="content3">
+<b>Bold</b>
+<br>
+<i>Italic</i>
+<br>
+<a target="_blank" href="http://">Link</a>
+<br>
+Normal text
+<br><br>
+<b>Note:</b> Rightmost tab buttons only change this title and box.
+</div>
+</div>
+<div id="textholder4">
+<div id="title2">
+<div id="picline1"></div>
+<div id="squarepic4"></div>
+<div id="picline2"></div>
+<div id="titletext4">
+Title Four
+</div>
+</div>
+<div id="content4">
+<b>Bold</b>
+<br>
+<i>Italic</i>
+<br>
+<a target="_blank" href="http://">Link</a>
+<br>
+Normal text
+</div>
+</div>
+
+<div id="tab1">
+This is the tab that appears when clicking the "Tab One" button.
+</div>
+<div id="tab2">
+Tab Title One
+</div>
+
+<div id="tab3">
+This is the tab that appears when clicking the "Tab Two" button.
+</div>
+<div id="tab4">
+Tab Title Two
+</div>
+
+<div id="tab5">
+This is the tab that appears when clicking the "Tab Three" button.
+</div>
+<div id="tab6">
+Tab Title Three
+</div>
+
+<div id="tab7">
+This is the tab that appears when clicking the "Tab Four" button.
+</div>
+<div id="tab8">
+Tab Title Four
+</div>
